@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <section id="section">
+        <h1>Exploring Event bubble</h1>
+    <ul id="list-ul">
+        <li id="item-1">Lorem, ipsum dolor.</li>
+        <li id="item-2">Sunt, eveniet recusandae.</li>
+        <li id="item-3">Inventore, laudantium at!</li>
+        <li id="item-4">Culpa, aspernatur odio!</li>
+        <li id="item-5">Est, non incidunt!</li>
+        <li id="item-6">Aperiam, ullam neque.</li>
+    </ul>
+    </section>
+    <script>
+        document.getElementById('item-2').addEventListener('click',function(event){
+            console.log('item-2 clicked');
+            event.stopImmediatePropagation();
+        })
+        document.getElementById('list-ul').addEventListener('click',function(event){
+            console.log('ul clicked');
+            event.stopImmediatePropagation();
+        })
+        document.getElementById('section').addEventListener('click',function(event){
+            console.log('section clicked');
+            event.stopImmediatePropagation();
+        })
+        document.getElementById('body').addEventListener('click',function(event){
+            console.log('body clicked');
+            event.stopImmediatePropagation();
+        })
+    </script>
+    <!-- event bubble k stop korba kivabe => stopPropagation() -->
+</body>
+</html>

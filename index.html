@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+</head>
+<body>
+    <h1 title="This is heading">Lorem, ipsum dolor.</h1>
+    <button onclick="console.log(8)">click me</button>
+    <button onclick="console.log('hi')">Another me</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">submit</button>
+    <button onclick="makeRed()">Make</button>
+    <button id="make-blue">click here</button>
+    <button id="purple">Purple</button>
+    <button id="pink">Make Pink</button>
+    <button id="green">make green</button>
+    <button id="orange">Make orange</button>
+    <script src="event.js"></script>
+    <script>
+        // function makeRed(){
+        //     document.body.style.backgroundColor = 'red';
+        // }
+        /*const makeBlueButton = document.getElementById('make-blue');
+        makeBlueButton.onclick = makeBlue;
+        function makeBlue(){
+            document.body.style.backgroundColor = 'blue';
+        }*/
+
+        /*const purpleButton = document.getElementById('purple');
+        purpleButton.onclick = function makePurple(){
+            document.body.style.backgroundColor = 'purple'
+        }*/
+        /*const pinkButton = document.getElementById('pink');
+        pinkButton.addEventListener('click', makePink);
+        function makePink(){
+            document.body.style.backgroundColor = 'pink'
+        }*/
+        
+        
+    </script>
+</body>
+</html>
